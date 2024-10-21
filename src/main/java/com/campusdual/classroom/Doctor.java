@@ -7,5 +7,11 @@ public class Doctor extends Person {
 	public Doctor(String name, String surname, String specialization) {
 		super(name, surname);
 		this.specialization = specialization;
+
+	}
+
+	@Override
+	public void getDetails() {
+		System.out.println("Mi nombre es: " + this.name + " y mi apellido es: " + this.surname + " y soy: " + this.specialization);
 	}
 }
